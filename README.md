@@ -16,9 +16,9 @@
 
 ### Sobre
 
-ADICIONAR DESCRIÇÃO
-FINALIZAR PAGINA DE CONTINENTE
-TORNAR RESPONSIVO
+Worldtrip é um aplicativo para mostrar o que cada continente tem a oferecer, suas cidades mais populares e muito mais... Veremos quantos idiomas eles têm, cidades e países. E se você está pensando em viajar, pode dar uma olhada aqui.
+
+Esse projeto foi desenvolvido durante um dos desafios dos capitulos do Ignite da Rocketseat! A ideia era desenvolver um site do zero seguindo o layout do Figma usando apenas o sistema do Chakra UI.
 
 ### Tecnologias
 
