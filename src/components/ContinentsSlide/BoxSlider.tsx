@@ -10,7 +10,14 @@ interface BoxSliderProps {
 export function BoxSlider({ description, image, title }: BoxSliderProps) {
   return (
     <Flex position="relative" w="100%" justify="center" align="center">
-      <Box position="relative" w="100%" h={450}>
+      <Box
+        position="relative"
+        w="100%"
+        h={{
+          base: '350px',
+          lg: '450px'
+        }}
+      >
         <Image
           src={image}
           alt={`banner - ${title}`}
@@ -29,13 +36,31 @@ export function BoxSlider({ description, image, title }: BoxSliderProps) {
         bg="#00000073"
         borderRadius="md"
         p="2"
-        maxW="50%"
+        maxW={{
+          base: '80%',
+          lg: '50%'
+        }}
       >
-        <Text fontWeight="bold" mb="4" fontSize="5xl" color="light.500">
+        <Text
+          fontWeight="bold"
+          mb="4"
+          fontSize={{
+            base: '3xl',
+            lg: '5xl'
+          }}
+          color="light.500"
+        >
           {title}
         </Text>
         <Flex textAlign="center">
-          <Text fontSize="md" fontWeight="normal" color="light.800">
+          <Text
+            fontSize={{
+              base: 'xx-small',
+              lg: 'md'
+            }}
+            fontWeight="normal"
+            color="light.800"
+          >
             {description}
           </Text>
         </Flex>

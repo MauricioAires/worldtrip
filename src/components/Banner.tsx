@@ -31,7 +31,13 @@ export function Banner() {
           </Text>
         </Box>
 
-        <Box w={417} h={280} mt="100" position="relative">
+        <Box
+          display={{ base: 'none', lg: 'block' }}
+          w={417}
+          h={280}
+          mt="100"
+          position="relative"
+        >
           <Image
             src="/airplane.svg"
             layout="fill"

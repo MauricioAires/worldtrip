@@ -22,7 +22,7 @@ export function HomeTemplate() {
           <Heading fontSize="4xl" color="dark.800">
             Vamos nessa?
           </Heading>
-          <Heading fontSize="4xl" color="dark.800">
+          <Heading fontSize="4xl" textAlign="center" color="dark.800">
             Então escolha seu continente
           </Heading>
         </Flex>

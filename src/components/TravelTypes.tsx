@@ -12,6 +12,7 @@ export function TravelTypes() {
       align="center"
       justify="space-around"
       px="10"
+      gap="8px"
     >
       <TravelTypeBox title="vida noturna" image="/cocktail.svg" />
       <TravelTypeBox title="praia" image="/surf.svg" />

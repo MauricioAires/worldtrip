@@ -5,6 +5,7 @@ import { Navigation, Pagination } from 'swiper'
 import { BoxSlider } from './BoxSlider'
 
 import * as S from './styles'
+import Link from 'next/link'
 
 export function ContinentsSlide() {
   const slider = [
@@ -58,7 +59,18 @@ export function ContinentsSlide() {
     }
   ]
   return (
-    <Flex w="100%" h="450">
+    <Flex
+      w="100%"
+      h={{
+        base: '375px',
+        lg: '350px'
+      }}
+      maxH={{
+        base: '375px',
+        lg: '350px'
+      }}
+      overflow="hidden"
+    >
       <S.SliderWrapper>
         <Swiper
           spaceBetween={50}
@@ -76,13 +88,15 @@ export function ContinentsSlide() {
               }}
               key={slide.id}
             >
-              <Box w="100%">
-                <BoxSlider
-                  description={slide.description}
-                  title={slide.title}
-                  image={slide.image}
-                />
-              </Box>
+              <Link href="/region">
+                <Box w="100%">
+                  <BoxSlider
+                    description={slide.description}
+                    title={slide.title}
+                    image={slide.image}
+                  />
+                </Box>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
