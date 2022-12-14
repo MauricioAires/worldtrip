@@ -95,6 +95,7 @@ export function RegionTemplate() {
                 lg: 'calc(calc(100% - 120px)/ 4)'
               }}
               minW="300px"
+              key={city.city}
             >
               <City {...city} />
             </Flex>

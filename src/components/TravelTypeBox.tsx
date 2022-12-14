@@ -2,7 +2,7 @@ import { Flex, Box, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 
 interface TravelTypeBoxProps {
-  image: String
+  image: string
   title: string
 }
 

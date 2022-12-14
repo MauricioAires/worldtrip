@@ -1,4 +1,4 @@
-import { Avatar, Flex, Text, Box, Icon } from '@chakra-ui/react'
+import { Avatar, Flex, Text, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
 interface CityProps {

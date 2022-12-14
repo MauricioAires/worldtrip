@@ -6,7 +6,7 @@ import { Flex, Box, Icon, Button } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 interface HeaderProps {
-  showButtonBack: boolean
+  showButtonBack?: boolean
 }
 
 export function Header({ showButtonBack = false }: HeaderProps) {
